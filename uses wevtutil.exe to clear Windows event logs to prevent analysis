@@ -1,0 +1,1 @@
+Invoke-Expression 'cmd.exe /c "for /F %1 in (''wevtutil.exe el'') DO wevtutil.exe cl \"%1\""'
