@@ -1,0 +1,10 @@
+<group name="windows,sysmon">
+ <rule id="111120" level="10">
+ <if_group>windows</if_group>
+ <field name="win.eventdata.ruleName" type="pcre2">technique</field>
+<description>Scheduled Task on $(win.system.computer)</description>
+<mitre>
+ <id>T1112</id>
+ </mitre>
+</rule>
+</group>
